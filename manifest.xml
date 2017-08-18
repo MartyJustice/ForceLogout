@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE plugin SYSTEM "manifest.dtd">
+<plugin version="2">
+	<info>
+		<version>0.9</version>
+		<name>forcelogout</name>
+		<title>forcelogout</title>
+		<author>Martijn Alberts</author>
+		<description>Always enable the logout button.</description>
+	</info>
+	<config>
+		<configfile>config.php</configfile>
+	</config>
+	<components>
+		<component>
+			<files>
+				<server>
+					<serverfile>php/plugin.forcelogout.php</serverfile>
+				</server>
+				<client>
+					<clientfile load="release">js/forcelogout.js</clientfile>
+					<clientfile load="debug">js/forcelogout.js</clientfile>
+					<clientfile load="source">js/forcelogout.js</clientfile>
+				</client>
+			</files>
+		</component>
+	</components>
+</plugin>
